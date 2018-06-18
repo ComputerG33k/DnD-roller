@@ -16,10 +16,10 @@ class Dice(Frame):
         
         #Create and add widgets
         self._outputArea = Text(self, width = 4, height = 7)
-        self._outputArea.grid(row = 8, column = 1, sticky = W + E + N + S)
+        self._outputArea.grid(row = 9, column = 1, sticky = W + E + N + S)
         self._image = PhotoImage(file = "Dice.gif")
         self._imageLabel = Label(self, image = self._image)
-        self._imageLabel.grid(row = 0, column = 0, padx = 200, columnspan = 4)
+        self._imageLabel.grid(row = 0, column = 1)
         self._labelD4 = Label(self, text = "D4 Times to roll", bg = "#cc9900")
         self._labelD4.grid(row = 1, column = 0, sticky = W)
         self._entryD4 = Entry(self, textvariable = self._D4Var)
